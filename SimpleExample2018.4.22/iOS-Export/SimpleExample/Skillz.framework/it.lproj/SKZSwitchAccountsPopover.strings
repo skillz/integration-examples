@@ -1,0 +1,15 @@
+/* Class = "UILabel"; text = "Login"; ObjectID = "7OQ-MQ-zrT"; */
+"7OQ-MQ-zrT.text" = "Accedi";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "Q7E-3l-Lz6"; */
+"Q7E-3l-Lz6.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "RZF-Ft-AgT"; */
+"RZF-Ft-AgT.normalTitle" = "ANNULLA";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "p3V-u9-ilC"; */
+"p3V-u9-ilC.normalTitle" = "ACCEDI";
+
+/* Class = "UITextField"; placeholder = "Username Or Email"; ObjectID = "sQq-8T-N7Q"; */
+"sQq-8T-N7Q.placeholder" = "Nome utente o indirizzo e-mail";
+

@@ -1,0 +1,77 @@
+ManifestFileVersion: 0
+CRC: 3990322938
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 95d8e11141992e91d55a9a395d83465a
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a39ee797dc69a5d057b93a3d84d47a76
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 81
+  Script: {instanceID: 0}
+- Class: 104
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b61f75928b53643ca9cf19921239c270, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2612a025b7430437cbbb43a9641995df, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a59252da4a24a446d907bbd0253809f8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 576677cbcc8a64d14957a8965b240c9e, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 345daa0e45cae4a249dc3857e4c4c959, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 157
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/SDK Scenes/MatchLost.unity
+- Assets/SDK Scenes/MatchWon.unity
+- Assets/SDK Scenes/EnteringMatch.unity
+- Assets/SDK Scenes/MatchAborted.unity
+- Assets/SDK Scenes/TournamentSelection.unity
+Dependencies:
+- /Users/jlin/repos/sdk-mobile/sdk-unity-crossplatform/sdk/Assets/Skillz/Internal/AssetBundles/skillz-assets

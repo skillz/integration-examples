@@ -1,0 +1,18 @@
+/* Class = "UILabel"; text = "Score:"; ObjectID = "DL4-FU-dQN"; */
+"DL4-FU-dQN.text" = "Счет:";
+
+/* Class = "UILabel"; text = "Please show this screen to the event moderator to claim your prize."; ObjectID = "XnV-GB-SGB"; */
+"XnV-GB-SGB.text" = "Покажите этот экран модератору события, чтобы получить приз.";
+
+/* Class = "UILabel"; text = "Event ID"; ObjectID = "aaS-SY-gUl"; */
+"aaS-SY-gUl.text" = "Идентификатор события";
+
+/* Class = "UILabel"; text = "Withdraw Code"; ObjectID = "jTs-9f-htl"; */
+"jTs-9f-htl.text" = "Код вывода средств";
+
+/* Class = "UILabel"; text = "Confirmation Number"; ObjectID = "tEa-fV-KyG"; */
+"tEa-fV-KyG.text" = "Номер подтверждения";
+
+/* Class = "UILabel"; text = "Match ID"; ObjectID = "vEj-SP-X2e"; */
+"vEj-SP-X2e.text" = "Идентификатор матча";
+

@@ -1,0 +1,15 @@
+/* Class = "UILabel"; text = "+/-"; ObjectID = "7ju-I5-Rq1"; */
+"7ju-I5-Rq1.text" = "+/-";
+
+/* Class = "UILabel"; text = "Date & Time"; ObjectID = "Fq6-R3-VKd"; */
+"Fq6-R3-VKd.text" = "Date et Heure";
+
+/* Class = "UILabel"; text = "Event"; ObjectID = "mV6-Ic-OP5"; */
+"mV6-Ic-OP5.text" = "Évènement";
+
+/* Class = "UILabel"; text = "Game"; ObjectID = "qPo-gl-RX9"; */
+"qPo-gl-RX9.text" = "Jeu";
+
+/* Class = "UILabel"; text = "Balance"; ObjectID = "y0S-sM-0Md"; */
+"y0S-sM-0Md.text" = "Solde";
+
