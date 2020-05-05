@@ -1,0 +1,27 @@
+/* Class = "UIButton"; normalTitle = "Credit Card"; ObjectID = "JTi-Hw-nwL"; */
+"JTi-Hw-nwL.normalTitle" = "Кредитная Карта";
+
+/* Class = "UILabel"; text = "ENTRIES TO PURCHASE:"; ObjectID = "LcF-KH-dEc"; */
+"LcF-KH-dEc.text" = "БИЛЕТЫ К ПОКУПКЕ:";
+
+/* Class = "UILabel"; text = "BONUS CASH:"; ObjectID = "XYJ-p0-CL6"; */
+"XYJ-p0-CL6.text" = "БОНУСНЫЕ ДЕНЬГИ:";
+
+/* Class = "UILabel"; text = "TOTAL ENTRIES:"; ObjectID = "cn2-OB-4PY"; */
+"cn2-OB-4PY.text" = "ВСЕГО БИЛЕТОВ:";
+
+/* Class = "UILabel"; text = "PURCHASE AMOUNT:"; ObjectID = "kE9-fC-dJj"; */
+"kE9-fC-dJj.text" = "СУММА ПОКУПКИ:";
+
+/* Class = "UILabel"; text = "Deposit Information"; ObjectID = "mbd-x2-VMA"; */
+"mbd-x2-VMA.text" = "Информация о взносе";
+
+/* Class = "UILabel"; text = "NEW BALANCE:"; ObjectID = "nMC-kX-ybM"; */
+"nMC-kX-ybM.text" = "НОВЫЙ ОСТАТОК:";
+
+/* Class = "UILabel"; text = "DEPOSIT AMOUNT:"; ObjectID = "t8a-GR-fZF"; */
+"t8a-GR-fZF.text" = "СУММА ВЗНОСА:";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT PAYMENT"; ObjectID = "xM1-hT-cON"; */
+"xM1-hT-cON.normalTitle" = "ОТПРАВИТЬ ПЛАТЕЖ";
+
