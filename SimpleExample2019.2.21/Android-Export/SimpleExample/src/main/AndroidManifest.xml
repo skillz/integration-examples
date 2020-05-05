@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.skillz.simpleexample" xmlns:tools="http://schemas.android.com/tools" android:installLocation="preferExternal">
+  <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+  <application android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:icon="@mipmap/app_icon" android:label="@string/app_name">
+    <activity android:label="@string/app_name" android:screenOrientation="portrait" android:launchMode="singleTop" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density" android:hardwareAccelerated="false" android:name="com.skillz.activity.UnityGameActivity" android:clearTaskOnLaunch="false" android:alwaysRetainTaskState="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+      <meta-data android:name="android.notch_support" android:value="true" />
+    </activity>
+    <meta-data android:name="unity.build-id" android:value="a9999e75-6c41-4515-bc73-a6703d41c104" />
+    <meta-data android:name="unity.splash-mode" android:value="0" />
+    <meta-data android:name="unity.splash-enable" android:value="True" />
+    <meta-data android:name="notch.config" android:value="portrait|landscape" />
+    <meta-data android:name="skillz_allow_exit" android:value="false" />
+    <meta-data android:name="skillz_game_id" android:value="5513" />
+    <meta-data android:name="skillz_production" android:value="false" />
+    <meta-data android:name="skillz_game_activity" android:value="com.skillz.activity.UnityGameActivity" />
+    <meta-data android:name="skillz_orientation" android:value="portrait" />
+    <meta-data android:name="skillz_is_unity" android:value="true" />
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
+  </application>
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch" android:required="false" />
+  <uses-feature android:name="android.hardware.touchscreen.multitouch.distinct" android:required="false" />
+  <uses-feature android:glEsVersion="0x00020000" />
+</manifest>
