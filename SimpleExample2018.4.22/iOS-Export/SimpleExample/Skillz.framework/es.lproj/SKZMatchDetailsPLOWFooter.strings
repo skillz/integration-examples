@@ -1,0 +1,12 @@
+/* Class = "UILabel"; text = "Date:"; ObjectID = "S8w-a0-WUt"; */
+"S8w-a0-WUt.text" = "Fecha:";
+
+/* Class = "UILabel"; text = "Match ID:"; ObjectID = "Sfa-rm-PKI"; */
+"Sfa-rm-PKI.text" = "ID de partida:";
+
+/* Class = "UILabel"; text = "Title:"; ObjectID = "kV4-7e-c9T"; */
+"kV4-7e-c9T.text" = "Título:";
+
+/* Class = "UILabel"; text = "Entry Fee:"; ObjectID = "mgU-BZ-QW5"; */
+"mgU-BZ-QW5.text" = "Cuota de admisión:";
+

@@ -51,3 +51,6 @@
 *.dat filter=lfs diff=lfs merge=lfs -text
 SimpleExample2019.2.21/iOS-Export/SimpleExample/Data/* filter=lfs diff=lfs merge=lfs -text
 SimpleExample2019.2.21/iOS-Export/SimpleExample/Skillz.framework/* filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+SimpleExample2018.4.22/iOS-Export/SimpleExample/Data/* filter=lfs diff=lfs merge=lfs -text
+SimpleExample2018.4.22/iOS-Export/SimpleExample/Skillz.framework/* filter=lfs diff=lfs merge=lfs -text

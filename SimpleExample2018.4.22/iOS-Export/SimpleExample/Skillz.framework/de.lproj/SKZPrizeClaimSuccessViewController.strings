@@ -1,0 +1,12 @@
+/* Class = "UILabel"; text = "You have received a prize of"; ObjectID = "6mI-qY-lpG"; */
+"6mI-qY-lpG.text" = "Sie haben einen Preis von erhalten";
+
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "IYg-ET-qov"; */
+"IYg-ET-qov.normalTitle" = "WEITER";
+
+/* Class = "UILabel"; text = "CONGRATULATIONS!"; ObjectID = "cls-Mg-cy7"; */
+"cls-Mg-cy7.text" = "HERZLICHEN GLÜCKWUNSCH!";
+
+/* Class = "UILabel"; text = "You will receive an email confirmation for your records."; ObjectID = "ocF-ep-A5c"; */
+"ocF-ep-A5c.text" = "Sie erhalten eine E-Mail- Bestätigung für Ihre Unterlagen .";
+

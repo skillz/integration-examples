@@ -1,0 +1,12 @@
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "F73-k0-euM"; */
+"F73-k0-euM.normalTitle" = "完成";
+
+/* Class = "UILabel"; text = "Didn't answer your question?"; ObjectID = "eOF-1U-oFq"; */
+"eOF-1U-oFq.text" = "没有回答你的问题？";
+
+/* Class = "UIButton"; normalTitle = "Select Support Category"; ObjectID = "hcP-zJ-0w8"; */
+"hcP-zJ-0w8.normalTitle" = "选择支持类别";
+
+/* Class = "UIButton"; normalTitle = "CONTACT CUSTOMER SERVICE"; ObjectID = "iKi-7b-1kJ"; */
+"iKi-7b-1kJ.normalTitle" = "联系客服";
+

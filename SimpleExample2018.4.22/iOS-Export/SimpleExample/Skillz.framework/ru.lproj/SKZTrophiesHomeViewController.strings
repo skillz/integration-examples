@@ -1,0 +1,18 @@
+/* Class = "UILabel"; text = "Trophies Earned"; ObjectID = "1hZ-H8-Bmn"; */
+"1hZ-H8-Bmn.text" = "Полученные трофеи";
+
+/* Class = "UIButton"; normalTitle = "COMPLETED"; ObjectID = "JAN-Se-L1m"; */
+"JAN-Se-L1m.normalTitle" = "ПОЛУЧЕННЫЕ";
+
+/* Class = "UIButton"; normalTitle = "UPCOMING"; ObjectID = "fOM-bT-1II"; */
+"fOM-bT-1II.normalTitle" = "ПРЕДСТОИТ ПОЛУЧИТЬ";
+
+/* Class = "UILabel"; text = "Tap the present above to claim your trophy and scroll through the list of trophies to see what else you can earn!"; ObjectID = "ruV-UR-OzJ"; */
+"ruV-UR-OzJ.text" = "Для получения трофея просто нажмите на изображение подарка! Прокрутите список вниз, чтобы увидеть все возможные трофеи!";
+
+/* Class = "UILabel"; text = "EARNED"; ObjectID = "yCN-d0-kGQ"; */
+"yCN-d0-kGQ.text" = "ПОЛУЧЕНО";
+
+/* Class = "UILabel"; text = "CONGRATULATIONS!"; ObjectID = "ylK-4H-GYQ"; */
+"ylK-4H-GYQ.text" = "ПОЗДРАВЛЯЕМ!";
+

@@ -1,0 +1,86 @@
+buildscript {
+	repositories {
+		google()
+		jcenter()
+		mavenCentral()
+	}
+
+	dependencies {
+		classpath 'com.android.tools.build:gradle:3.5.2'
+	}
+}
+
+allprojects {
+	repositories {
+		flatDir {
+			dirs 'libs'
+		}
+		google()
+	}
+}
+
+
+apply plugin: 'com.android.application'
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+	implementation ("com.skillz.sdk:skillz-sdk-android:25.0.16-SNAPSHOT")
+	{
+		transitive = false
+	}
+**DEPS**
+}
+
+android {
+	compileSdkVersion 28
+
+	configurations.all {
+		resolutionStrategy.force 'androidx.multidex:multidex:2.0.0'
+	}
+
+	defaultConfig {
+		minSdkVersion 23
+		targetSdkVersion 28
+		multiDexEnabled true
+		multiDexKeepProguard file('multidex-keep.txt')
+
+		ndk {
+			abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+		}
+	}
+
+	dexOptions {
+		javaMaxHeapSize "4g"
+	}
+
+	lintOptions {
+		abortOnError false
+	}
+
+	buildTypes {
+		debug {
+			jniDebuggable true
+		}
+		release {
+			minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-user.txt'
+
+		}
+	}
+
+	repositories {
+		google()
+		mavenCentral()
+		maven {
+			url 'http://nexus.skillz.com/content/groups/public/'
+		}
+		maven {
+			url 'https://jitpack.io'
+		}
+	}
+
+	compileOptions {
+		sourceCompatibility JavaVersion.VERSION_1_8
+		targetCompatibility JavaVersion.VERSION_1_8
+	}
+}
