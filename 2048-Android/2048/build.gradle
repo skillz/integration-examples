@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 28
+        versionName "1.1.11"
+
+        multiDexEnabled true
+        multiDexKeepProguard file('multidex-keep.txt')
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-user.txt'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    repositories {
+        maven {
+            url "http://nexus.skillz.com/content/groups/public/"
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:multidex:2.0.0'
+    implementation 'com.skillz.sdk:skillz-sdk-android:25.0.19-SNAPSHOT'
+}

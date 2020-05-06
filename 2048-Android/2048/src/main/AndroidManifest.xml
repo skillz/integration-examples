@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tpcstld.twozerogame">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_2048"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="skillz_game_id" android:value="5425" />
+        <meta-data android:name="skillz_production" android:value="false" />
+        <meta-data android:name="skillz_game_activity" android:value="com.tpcstld.twozerogame.MainActivity" />
+        <meta-data android:name="skillz_allow_exit" android:value="false" />
+        <meta-data android:name="skillz_orientation" android:value="portrait" />
+
+        <activity
+            android:name=".LaunchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.tpctld.twozerogame.Game" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
