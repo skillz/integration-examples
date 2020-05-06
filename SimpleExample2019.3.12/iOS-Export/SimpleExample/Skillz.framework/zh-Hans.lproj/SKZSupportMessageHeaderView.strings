@@ -1,0 +1,9 @@
+/* Class = "UILabel"; text = "From:"; ObjectID = "POE-OS-qai"; */
+"POE-OS-qai.text" = "来自：";
+
+/* Class = "UILabel"; text = "To:"; ObjectID = "fIm-yt-ewa"; */
+"fIm-yt-ewa.text" = "要：";
+
+/* Class = "UILabel"; text = "Ticket ID:"; ObjectID = "jMF-L9-usW"; */
+"jMF-L9-usW.text" = "票务ID ：";
+
