@@ -1,0 +1,21 @@
+/* Class = "UILabel"; text = "Remember you get"; ObjectID = "9sq-ik-mei"; */
+"9sq-ik-mei.text" = "Denk dran, du erhältst";
+
+/* Class = "UILabel"; text = "X friends you invited joined Skillz."; ObjectID = "9xN-Zd-6x9"; */
+"9xN-Zd-6x9.text" = "X von dir eingeladene Freunde sind Skillz beigetreten.";
+
+/* Class = "UILabel"; text = "when they make a deposit"; ObjectID = "UiA-yR-oLN"; */
+"UiA-yR-oLN.text" = "wenn sie eine Einzahlung tätigen";
+
+/* Class = "UILabel"; text = "YOU'VE GOT NEW FRIENDS!"; ObjectID = "Vgh-vk-edx"; */
+"Vgh-vk-edx.text" = "DU HAST NEUE FREUNDE!";
+
+/* Class = "UILabel"; text = "$ CASH"; ObjectID = "mp6-JQ-MSA"; */
+"mp6-JQ-MSA.text" = "$ CASH";
+
+/* Class = "UILabel"; text = "1/2"; ObjectID = "nFd-aB-pfK"; */
+"nFd-aB-pfK.text" = "1/2";
+
+/* Class = "UIButton"; normalTitle = "SEND THEM A REMINDER"; ObjectID = "s34-1o-01M"; */
+"s34-1o-01M.normalTitle" = "SENDE IHNEN EINE ERINNERUNG";
+

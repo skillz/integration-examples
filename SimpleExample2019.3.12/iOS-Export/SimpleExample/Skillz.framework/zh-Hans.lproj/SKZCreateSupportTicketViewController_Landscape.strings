@@ -1,0 +1,15 @@
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "Fkn-1x-wS3"; */
+"Fkn-1x-wS3.normalTitle" = "完成";
+
+/* Class = "UILabel"; text = "New Support Message"; ObjectID = "IlU-ml-dJv"; */
+"IlU-ml-dJv.text" = "新的消息支持";
+
+/* Class = "UITextField"; placeholder = "Enter Match ID (if applicable)"; ObjectID = "nfo-aJ-GtY"; */
+"nfo-aJ-GtY.placeholder" = "进入比赛ID（如适用）";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "nst-jR-gTX"; */
+"nst-jR-gTX.normalTitle" = "提交";
+
+/* Class = "UIButton"; normalTitle = "Select Support Category"; ObjectID = "vCO-55-Zqe"; */
+"vCO-55-Zqe.normalTitle" = "选择支持类别";
+

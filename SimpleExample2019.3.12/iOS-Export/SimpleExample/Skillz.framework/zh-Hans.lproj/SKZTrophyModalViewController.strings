@@ -1,0 +1,9 @@
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "6Et-0R-NUI"; */
+"6Et-0R-NUI.normalTitle" = "下一个";
+
+/* Class = "UILabel"; text = "CONGRATULATIONS!"; ObjectID = "MP2-jZ-PSN"; */
+"MP2-jZ-PSN.text" = "恭喜！";
+
+/* Class = "UILabel"; text = "YOU EARNED"; ObjectID = "VmL-v0-6uh"; */
+"VmL-v0-6uh.text" = "您赢得";
+
