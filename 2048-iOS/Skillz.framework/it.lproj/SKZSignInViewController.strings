@@ -1,0 +1,12 @@
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "2bs-YC-EFf"; */
+"2bs-YC-EFf.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Username or Email"; ObjectID = "QeH-oD-cAE"; */
+"QeH-oD-cAE.placeholder" = "Nome utente o e-mail";
+
+/* Class = "UIButton"; normalTitle = "Forgot Username/Password"; ObjectID = "bjJ-AF-BFF"; */
+"bjJ-AF-BFF.normalTitle" = "Hai dimenticato il tuo nome utente o la tua password?";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "dI2-2r-b71"; */
+"dI2-2r-b71.normalTitle" = "REGISTRATI";
+

@@ -1,0 +1,12 @@
+/* Class = "UILabel"; text = "Always On"; ObjectID = "JAy-Uc-Ff4"; */
+"JAy-Uc-Ff4.text" = "Siempre activado";
+
+/* Class = "UILabel"; text = "Always Off"; ObjectID = "kuZ-54-b1J"; */
+"kuZ-54-b1J.text" = "Siempre desactivado";
+
+/* Class = "UILabel"; text = "Server Controlled"; ObjectID = "mbH-R2-Sbc"; */
+"mbH-R2-Sbc.text" = "Servidor controlado";
+
+/* Class = "UILabel"; text = "Record Replay?"; ObjectID = "tIv-IP-fbB"; */
+"tIv-IP-fbB.text" = "¿Grabar repetición?";
+

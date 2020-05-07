@@ -1,0 +1,5 @@
+/* Class = "UIButton"; normalTitle = "Back"; ObjectID = "hTN-Ns-bpe"; */
+"hTN-Ns-bpe.normalTitle" = "Retour";
+
+/* Class = "UIButton"; normalTitle = "Existing User Sign In"; ObjectID = "tuB-fm-xke"; */
+"tuB-fm-xke.normalTitle" = "Données de connexion d'utilisateur existantes";

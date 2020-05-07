@@ -1,0 +1,14 @@
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "2bs-YC-EFf"; */
+"2bs-YC-EFf.placeholder" = "Пароль";
+
+/* Class = "UITextField"; placeholder = "Username or Email"; ObjectID = "QeH-oD-cAE"; */
+"QeH-oD-cAE.placeholder" = "имя или e-mail";
+
+/* Class = "UIButton"; normalTitle = "Forgot Username/Password"; ObjectID = "bjJ-AF-BFF"; */
+"bjJ-AF-BFF.normalTitle" = "Забыли имя пользователя/пароль";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "dI2-2r-b71"; */
+"dI2-2r-b71.normalTitle" = "ВХОД";
+
+/* Class = "UILabel"; text = "Sign in to your Skillz Account"; ObjectID = "rh0-4n-Ot0"; */
+"rh0-4n-Ot0.text" = "Войдите в свой аккаунт Skillz";
