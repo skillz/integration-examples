@@ -1,0 +1,24 @@
+/* Class = "UILabel"; text = "(You may only change it once)"; ObjectID = "5B5-Q5-LkI"; */
+"5B5-Q5-LkI.text" = "（一度だけ変更できます）";
+
+/* Class = "UIButton"; normalTitle = "SELECT FROM LIBRARY"; ObjectID = "HQ3-mF-cbu"; */
+"HQ3-mF-cbu.normalTitle" = "ライブラリから選択";
+
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "UPJ-7B-4xg"; */
+"UPJ-7B-4xg.normalTitle" = "次へ";
+
+/* Class = "UILabel"; text = "Your Avatar"; ObjectID = "ZRG-AB-KM9"; */
+"ZRG-AB-KM9.text" = "あなたのアバター";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "a8M-yM-gLw"; */
+"a8M-yM-gLw.normalTitle" = "送信";
+
+/* Class = "UILabel"; text = "Pick A Name & An Avatar"; ObjectID = "mMt-r5-Nl3"; */
+"mMt-r5-Nl3.text" = "サインインボタン";
+
+/* Class = "UILabel"; text = "(You can always change it later)"; ObjectID = "rrJ-2c-cAd"; */
+"rrJ-2c-cAd.text" = "（後ほどいつでも変更できます）";
+
+/* Class = "UILabel"; text = "Your Username"; ObjectID = "zJx-al-WPK"; */
+"zJx-al-WPK.text" = "あなたのユーザー名";
+
