@@ -1,0 +1,13 @@
+include "Packet.fbs";
+
+namespace SyncServer;
+
+table MatchSuccessPacket {
+    opcode: short; // 6
+    registeredMatchId: string;
+    matchStarting: bool;
+    success: bool;
+    tick_rate: int;
+}
+
+root_type Packet;

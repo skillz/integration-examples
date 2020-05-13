@@ -1,0 +1,9 @@
+include "Packet.fbs";
+
+namespace SyncServer;
+
+table AbortPacket {
+    opcode: short; // 5
+}
+
+root_type Packet;

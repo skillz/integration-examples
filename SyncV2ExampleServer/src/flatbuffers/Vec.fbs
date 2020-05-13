@@ -1,0 +1,8 @@
+include "Vec.fbs";
+
+namespace SyncServer;
+
+struct Vec2 {
+    x: float;
+    y: float;
+}

@@ -1,0 +1,12 @@
+include "Packet.fbs";
+include "Vec.fbs";
+
+namespace SyncServer;
+
+ table PlayerUpdatePacket {
+    opcode: short = 3;
+    pos_x: float;
+    pos_y: float;
+ }
+
+root_type Packet;

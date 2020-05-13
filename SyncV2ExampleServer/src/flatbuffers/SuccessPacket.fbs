@@ -1,0 +1,10 @@
+include "Packet.fbs";
+
+namespace SyncServer;
+
+table SuccessPacket {
+    opcode: short; // 2
+    success: bool;
+}
+
+root_type Packet;
