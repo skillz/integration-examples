@@ -1,0 +1,10 @@
+include "Packet.fbs";
+
+namespace SyncServer;
+
+table GameOverPacket {
+    opcode: short; // 7
+    gameSuccessful: bool;
+}
+
+root_type Packet;

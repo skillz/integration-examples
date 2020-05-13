@@ -1,0 +1,19 @@
+include "Packet.fbs";
+include "Vec.fbs";
+
+namespace SyncServer;
+
+struct PlayerData {
+    userId: long;
+    pos_x: float;
+    pos_y: float;
+    active: bool;
+}
+
+table GameStateUpdatePacket {
+    opcode: short; // 5
+    players: [PlayerData]; // this defines a List<PlayerData> named players
+    game_time: long;
+}
+
+root_type Packet;

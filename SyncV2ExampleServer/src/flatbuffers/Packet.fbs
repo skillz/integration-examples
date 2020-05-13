@@ -1,0 +1,7 @@
+namespace SyncServer;
+
+table Packet {
+    opcode: short;
+}
+
+root_type Packet;

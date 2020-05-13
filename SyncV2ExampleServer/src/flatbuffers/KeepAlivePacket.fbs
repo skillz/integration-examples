@@ -1,0 +1,10 @@
+include "Packet.fbs";
+
+namespace SyncServer;
+
+table KeepAlivePacket {
+    opcode: short; // 8
+    success: bool;
+}
+
+root_type Packet;

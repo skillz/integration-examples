@@ -1,0 +1,124 @@
+import io.netifi.flatbuffers.plugin.tasks.FlatBuffers
+
+
+
+plugins {
+    id 'java'
+    id 'idea'
+    id "io.netifi.flatbuffers" version "1.0.6"
+    id "com.google.osdetector" version "1.4.0"
+    id "com.google.protobuf" version "0.8.11"
+}
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven { // The google mirror is less flaky than mavenCentral()
+        url "https://maven-central.storage-download.googleapis.com/repos/central/data/" }
+    mavenCentral()
+}
+
+def protobufVersion = '3.11.0'
+def nettyVersion = '4.1.42.Final'
+def flatbuffersVersion = '1.12.0'
+
+def tcnative_classifier = osdetector.classifier;
+// Fedora variants use a different soname for OpenSSL than other linux distributions
+// (see http://netty.io/wiki/forked-tomcat-native.html).
+if (osdetector.os == "linux" && osdetector.release.isLike("fedora")) {
+    tcnative_classifier += "-fedora";
+}
+
+dependencies {
+    compile 'org.json:json:20171018'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    compile 'com.google.protobuf:protobuf-java:3.11.0'
+
+    compile group: 'io.netty', name: 'netty-all', version: "${nettyVersion}"
+    compile group: 'com.google.flatbuffers', name: 'flatbuffers-java', version: "${flatbuffersVersion}"
+    compile group: 'org.reflections', name: 'reflections', version: '0.9.12'
+
+    compileOnly 'javax.annotation:jsr250-api:1.0'
+
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.1'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.1'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['certs', 'conf']
+        }
+    }
+}
+
+protobuf {
+    generatedFilesBaseDir = "$projectDir/src/generated"
+
+    plugins {
+        // Locate a plugin with name 'grpc'. This step is optional.
+        // If you don't locate it, protoc will try to use "protoc-gen-grpc" from
+        // system search path.
+//        grpc {
+//            artifact = 'io.grpc:protoc-gen-grpc-java:1.0.0-pre2'
+//            // or
+//            // path = 'tools/protoc-gen-grpc-java'
+//        }
+    }
+
+    generateProtoTasks {
+        ofSourceSet('main')*.plugins {
+            // Apply the "grpc" plugin whose spec is defined above, without
+            // options.  Note the braces cannot be omitted, otherwise the
+            // plugin will not be added. This is because of the implicit way
+            // NamedDomainObjectContainer binds the methods.
+//            grpc { }
+        }
+    }
+
+
+}
+
+clean {
+    delete protobuf.generatedFilesBaseDir
+}
+
+flatbuffers {
+    flatcPath = '/usr/local/bin/flatc'
+    language = 'java'
+    flatBuffersVersion = "${flatbuffersVersion}"
+}
+
+task createFlatBuffers(type: FlatBuffers) {
+    inputDir = file("src/flatbuffers")
+    outputDir = file("src/generated/flatbuffers")
+}
+
+task copyTask(type: Copy) {
+    from 'certs/.'
+    into 'build/libs/'
+}
+
+task createFlatBuffersCSharp(type: Exec) {
+    commandLine 'sh', '-c', 'flatc --csharp -o csharp_flatbuffer_gen src/flatbuffers/* && zip -r csharp_flatbuffer_gen.zip csharp_flatbuffer_gen && rm -rf ./csharp_flatbuffer_gen/'
+}
+
+task createFlatBuffersCPP(type: Exec) {
+    commandLine 'sh', '-c', 'flatc --cpp -o cpp_flatbuffer_gen src/flatbuffers/* && zip -r cpp_flatbuffer_gen.zip cpp_flatbuffer_gen && rm -rf ./cpp_flatbuffer_gen/'
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "main.Server"
+    }
+
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+

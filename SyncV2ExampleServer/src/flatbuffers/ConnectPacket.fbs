@@ -1,0 +1,12 @@
+include "Packet.fbs";
+
+namespace SyncServer;
+
+table ConnectPacket {
+    opcode: short; // 1
+    userId: long;
+    matchId: string;
+    externalToken: string;
+}
+
+root_type Packet;
