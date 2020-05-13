@@ -1,0 +1,9 @@
+/* Class = "UIButton"; normalTitle = "CONFIRM"; ObjectID = "6pi-RK-cuV"; */
+"6pi-RK-cuV.normalTitle" = "確認する";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "tpQ-SN-mRL"; */
+"tpQ-SN-mRL.normalTitle" = "キャンセル";
+
+/* Class = "UILabel"; text = "Purchase Entries"; ObjectID = "vmu-1x-SV8"; */
+"vmu-1x-SV8.text" = "エントリーを購入";
+

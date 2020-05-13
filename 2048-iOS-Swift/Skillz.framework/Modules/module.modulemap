@@ -1,0 +1,6 @@
+framework module Skillz {
+  umbrella header "Skillz.h"
+
+  export *
+  module * { export * }
+}
