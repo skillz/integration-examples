@@ -1,0 +1,12 @@
+/* Class = "UILabel"; text = "You have received a prize of"; ObjectID = "6mI-qY-lpG"; */
+"6mI-qY-lpG.text" = "あなたはの賞を受けている";
+
+/* Class = "UIButton"; normalTitle = "NEXT"; ObjectID = "IYg-ET-qov"; */
+"IYg-ET-qov.normalTitle" = "次へ";
+
+/* Class = "UILabel"; text = "CONGRATULATIONS!"; ObjectID = "cls-Mg-cy7"; */
+"cls-Mg-cy7.text" = "おめでとう！";
+
+/* Class = "UILabel"; text = "You will receive an email confirmation for your records."; ObjectID = "ocF-ep-A5c"; */
+"ocF-ep-A5c.text" = "あなたはあなたの記録のための確認メールが届きます。";
+

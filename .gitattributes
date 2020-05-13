@@ -57,3 +57,5 @@ SimpleExample2018.4.22/iOS-Export/SimpleExample/Skillz.framework/* filter=lfs di
 SimpleExample2019.3.12/iOS-Export/SimpleExample/Skillz.framework/* filter=lfs diff=lfs merge=lfs -text
 SimpleExample2019.3.12/iOS-Export/SimpleExample/Data/* filter=lfs diff=lfs merge=lfs -text
 2048-iOS/Skillz.framework/* filter=lfs diff=lfs merge=lfs -text
+2048-iOS-Objc-C/Skillz.framework/* filter=lfs diff=lfs merge=lfs -text
+2048-iOS-Swift/Skillz.framework/* filter=lfs diff=lfs merge=lfs -text

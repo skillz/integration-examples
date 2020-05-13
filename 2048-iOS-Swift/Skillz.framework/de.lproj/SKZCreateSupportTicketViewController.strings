@@ -1,0 +1,15 @@
+/* Class = "UIButton"; normalTitle = "Done"; ObjectID = "Fkn-1x-wS3"; */
+"Fkn-1x-wS3.normalTitle" = "Fertig";
+
+/* Class = "UIButton"; normalTitle = "Select Support Category"; ObjectID = "N2e-kj-Ffc"; */
+"N2e-kj-Ffc.normalTitle" = "Support-Kategorie auswählen";
+
+/* Class = "UILabel"; text = "New Support Message"; ObjectID = "Vju-Xc-DoW"; */
+"Vju-Xc-DoW.text" = "Neue Support-Meldung";
+
+/* Class = "UITextField"; placeholder = "Enter Match ID (if applicable)"; ObjectID = "YtH-u0-gYG"; */
+"YtH-u0-gYG.placeholder" = "Geben Spiel ID (gegebenenfalls)";
+
+/* Class = "UIButton"; normalTitle = "SUBMIT"; ObjectID = "cM6-G0-Jpo"; */
+"cM6-G0-Jpo.normalTitle" = "SENDEN";
+

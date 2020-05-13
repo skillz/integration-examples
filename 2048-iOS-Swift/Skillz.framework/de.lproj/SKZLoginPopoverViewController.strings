@@ -1,0 +1,18 @@
+/* Class = "UIButton"; normalTitle = "EXIT"; ObjectID = "4ef-10-pUh"; */
+"4ef-10-pUh.normalTitle" = "AUSGANG";
+
+/* Class = "UILabel"; text = "Enter your password to login to your account"; ObjectID = "98a-uS-ws0"; */
+"98a-uS-ws0.text" = "Gib dein passwort ein, um dich bei deinem konto anzumelden";
+
+/* Class = "UILabel"; text = "Username:"; ObjectID = "V7z-Wp-Ssh"; */
+"V7z-Wp-Ssh.text" = "Benutzername:";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "W3F-JE-oi7"; */
+"W3F-JE-oi7.placeholder" = "Passwort";
+
+/* Class = "UIButton"; normalTitle = "LOGIN"; ObjectID = "iYX-HB-lZL"; */
+"iYX-HB-lZL.normalTitle" = "ANMELDEN";
+
+/* Class = "UILabel"; text = "Logged Out"; ObjectID = "j9y-yL-rqi"; */
+"j9y-yL-rqi.text" = "Abgemeldet";
+
