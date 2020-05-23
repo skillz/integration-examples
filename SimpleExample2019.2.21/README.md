@@ -4,7 +4,7 @@ This repository contains an simple example cross-platform Unity game that integr
 
 ## Build Environment
 
-This project is integrated the Skillz SDK version 25.0.25. Check the [Downloads](https://developers.skillz.com/downloads) page for the latest version, and the instructions are located [here](https://docs.skillz.com/docs/installing-skillz-unity/)
+This project is integrated the Skillz SDK version 25.0.22. Check the [Downloads](https://developers.skillz.com/downloads) page for the latest version, and the instructions are located [here](https://docs.skillz.com/docs/installing-skillz-unity/)
 
 The project was built on Unity 2019.2.21.
 
