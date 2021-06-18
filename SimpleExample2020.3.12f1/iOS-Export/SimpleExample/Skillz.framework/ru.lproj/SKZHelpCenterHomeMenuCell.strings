@@ -1,0 +1,21 @@
+/* Class = "UILabel"; text = "Match Notifications"; ObjectID = "dJP-b3-4lI"; */
+"dJP-b3-4lI.text" = "Уведомления о матчах";
+
+/* Class = "UILabel"; text = "Chat Notifications"; ObjectID = "jG4-6R-OXl"; */
+"jG4-6R-OXl.text" = "Уведомления в чате";
+
+/* Class = "UIButton"; normalTitle = "Send me a notification for every match"; ObjectID = "5lR-gh-RSy"; */
+"5lR-gh-RSy.normalTitle" = "Отправлять мне уведомления обо всех матчах";
+
+/* Class = "UIButton"; normalTitle = "Do not send me match notifications"; ObjectID = "RiD-KW-P2p"; */
+"RiD-KW-P2p.normalTitle" = "Не отправлять мне уведомления о матчах";
+
+/* Class = "UIButton"; normalTitle = "Automatic based on my activity"; ObjectID = "uLd-oN-mGa"; */
+"uLd-oN-mGa.normalTitle" = "Автоматически в соответствии с моей активностью";
+
+/* Class = "UIButton"; normalTitle = "Send me notifications for chat"; ObjectID = "82I-27-cWz"; */
+"82I-27-cWz.normalTitle" = "Отправлять мне уведомления о чате";
+
+/* Class = "UIButton"; normalTitle = "Do not send me notifications for chat"; ObjectID = "YTi-pq-Uue"; */
+"YTi-pq-Uue.normalTitle" = "Не отправлять мне уведомления о чате";
+

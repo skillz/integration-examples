@@ -1,0 +1,33 @@
+/* Class = "UILabel"; text = "3"; ObjectID = "0WR-ab-dtd"; */
+"0WR-ab-dtd.text" = "3";
+
+/* Class = "UILabel"; text = "WIN STREAK"; ObjectID = "1d8-bb-9iB"; */
+"1d8-bb-9iB.text" = "GEWINNSERIE";
+
+/* Class = "UILabel"; text = "MATCHES WON"; ObjectID = "7WP-ao-Od3"; */
+"7WP-ao-Od3.text" = "GEWONNENE MATCHES";
+
+/* Class = "UILabel"; text = "WINS/WIN STREAK"; ObjectID = "Hk1-EG-1Ig"; */
+"Hk1-EG-1Ig.text" = "GEWINNSERIE";
+
+/* Class = "UIButton"; normalTitle = "VIEW LEAGUES"; ObjectID = "Ty6-Ym-MYY"; */
+"Ty6-Ym-MYY.normalTitle" = "LIGEN ANSEHEN";
+
+/* Class = "UIButton"; normalTitle = "VS YOU"; ObjectID = "VC2-35-bg8"; */
+"VC2-35-bg8.normalTitle" = "GEGEN DICH";
+
+/* Class = "UIButton"; normalTitle = "VIEW TROPHIES"; ObjectID = "ZQC-13-WdQ"; */
+"ZQC-13-WdQ.normalTitle" = "TROPHÄEN ANSEHEN";
+
+/* Class = "UILabel"; text = "YOUR RANK"; ObjectID = "ek8-nM-MCO"; */
+"ek8-nM-MCO.text" = "DEIN RANG";
+
+/* Class = "UILabel"; text = "TROPHIES EARNED"; ObjectID = "lCe-B5-HNA"; */
+"lCe-B5-HNA.text" = "VERDIENTE TROPHÄEN";
+
+/* Class = "UILabel"; text = "No Trophies Earned"; ObjectID = "q3e-ZN-1Yp"; */
+"q3e-ZN-1Yp.text" = "Keine Trophäen verdient";
+
+/* Class = "UILabel"; text = "VS EVERYONE"; ObjectID = "x4M-BR-cNa"; */
+"x4M-BR-cNa.text" = "GEGEN JEDEN";
+

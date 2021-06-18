@@ -1,0 +1,33 @@
+/* Class = "UILabel"; text = "3"; ObjectID = "0WR-ab-dtd"; */
+"0WR-ab-dtd.text" = "3";
+
+/* Class = "UILabel"; text = "WIN STREAK"; ObjectID = "1d8-bb-9iB"; */
+"1d8-bb-9iB.text" = "连胜";
+
+/* Class = "UILabel"; text = "MATCHES WON"; ObjectID = "7WP-ao-Od3"; */
+"7WP-ao-Od3.text" = "所赢比赛";
+
+/* Class = "UILabel"; text = "WINS/WIN STREAK"; ObjectID = "Hk1-EG-1Ig"; */
+"Hk1-EG-1Ig.text" = "胜利/连胜";
+
+/* Class = "UIButton"; normalTitle = "VIEW LEAGUES"; ObjectID = "Ty6-Ym-MYY"; */
+"Ty6-Ym-MYY.normalTitle" = "浏览联盟";
+
+/* Class = "UIButton"; normalTitle = "VS YOU"; ObjectID = "VC2-35-bg8"; */
+"VC2-35-bg8.normalTitle" = "VS 你";
+
+/* Class = "UIButton"; normalTitle = "VIEW TROPHIES"; ObjectID = "ZQC-13-WdQ"; */
+"ZQC-13-WdQ.normalTitle" = "浏览联盟";
+
+/* Class = "UILabel"; text = "YOUR RANK"; ObjectID = "ek8-nM-MCO"; */
+"ek8-nM-MCO.text" = "你的排名";
+
+/* Class = "UILabel"; text = "TROPHIES EARNED"; ObjectID = "lCe-B5-HNA"; */
+"lCe-B5-HNA.text" = "赢取的战利品";
+
+/* Class = "UILabel"; text = "No Trophies Earned"; ObjectID = "q3e-ZN-1Yp"; */
+"q3e-ZN-1Yp.text" = "没有赢得战利品";
+
+/* Class = "UILabel"; text = "VS EVERYONE"; ObjectID = "x4M-BR-cNa"; */
+"x4M-BR-cNa.text" = "VS 大家";
+

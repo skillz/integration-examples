@@ -1,0 +1,6 @@
+/* Class = "UILabel"; text = "Nice Score"; ObjectID = "417-p9-fZq"; */
+"417-p9-fZq.text" = "Хороший Результат";
+
+/* Class = "UILabel"; text = "We're currently matching you with a new opponent. If push notifications are turned on, you'll receive a notification when the match is complete."; ObjectID = "TOV-Yz-W7b"; */
+"TOV-Yz-W7b.text" = "В настоящее время мы соответствие вас с другими игроками. Если толчок уведомления включены, вы будете получать уведомления, когда матч завершен.";
+

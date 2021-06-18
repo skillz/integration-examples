@@ -1,0 +1,24 @@
+/* Class = "UIButton"; normalTitle = "TWITTER"; ObjectID = "4BI-fP-8YM"; */
+"4BI-fP-8YM.normalTitle" = "TWITTER";
+
+/* Class = "UILabel"; text = "For each friend who makes a deposit"; ObjectID = "8Gr-lg-K5O"; */
+"8Gr-lg-K5O.text" = "За каждого друга кто сделает взнос";
+
+/* Class = "UIButton"; normalTitle = "EMAIL"; ObjectID = "G5O-8u-HoL"; */
+"G5O-8u-HoL.normalTitle" = "ЭЛЕКТРОННАЯ ПОЧТА";
+
+/* Class = "UIButton"; normalTitle = "MESSAGE"; ObjectID = "RPh-Dk-mVS"; */
+"RPh-Dk-mVS.normalTitle" = "СООБЩЕНИЕ";
+
+/* Class = "UILabel"; text = "GET"; ObjectID = "UMm-09-Qqy"; */
+"UMm-09-Qqy.text" = "ПОЛУЧИТЬ";
+
+/* Class = "UILabel"; text = "INVITE YOUR FRIENDS!"; ObjectID = "fvj-eo-G92"; */
+"fvj-eo-G92.text" = "ПРИГЛАСИТЕ ДРУЗЕЙ!";
+
+/* Class = "UIButton"; normalTitle = "COPY LINK"; ObjectID = "jVv-C6-1UV"; */
+"jVv-C6-1UV.normalTitle" = "КОПИРОВАТЬ ССЫЛКУ";
+
+/* Class = "UILabel"; text = "IN BONUS CASH"; ObjectID = "zkq-Ko-sB4"; */
+"zkq-Ko-sB4.text" = "В КАЧЕСТВЕ БОНУСА";
+
