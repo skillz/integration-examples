@@ -1,0 +1,12 @@
+/* Class = "UIButton"; normalTitle = "NO"; ObjectID = "7eW-bn-DBk"; */
+"7eW-bn-DBk.normalTitle" = "NÃO";
+
+/* Class = "UILabel"; text = "Do you want to play a new match with the same stakes?"; ObjectID = "axW-CQ-qCK"; */
+"axW-CQ-qCK.text" = "Quer jogar uma nova partida com as mesmas apostas?";
+
+/* Class = "UIButton"; normalTitle = "YES"; ObjectID = "gFu-QC-3ka"; */
+"gFu-QC-3ka.normalTitle" = "SIM";
+
+/* Class = "UILabel"; text = "Don't show this again"; ObjectID = "lNQ-VS-3AV"; */
+"lNQ-VS-3AV.text" = "Não mostrar novamente";
+

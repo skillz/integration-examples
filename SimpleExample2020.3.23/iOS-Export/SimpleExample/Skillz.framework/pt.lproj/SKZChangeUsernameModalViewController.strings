@@ -1,0 +1,15 @@
+/* Class = "UILabel"; text = "You may change your username only once."; ObjectID = "KKm-9v-BwE"; */
+"KKm-9v-BwE.text" = "Você pode alterar o seu nome de usuário uma única vez.";
+
+/* Class = "UIButton"; normalTitle = "SAVE"; ObjectID = "OAt-9f-pCP"; */
+"OAt-9f-pCP.normalTitle" = "SALVAR";
+
+/* Class = "UILabel"; text = "Would You Like To Update Your Username?"; ObjectID = "Pmz-B3-RcF"; */
+"Pmz-B3-RcF.text" = "Gostaria De Atualizar Nome De Usuário?";
+
+/* Class = "UITextField"; placeholder = "Username"; ObjectID = "Pw2-s9-wE3"; */
+"Pw2-s9-wE3.placeholder" = "Nome de usuário";
+
+/* Class = "UIButton"; normalTitle = "CANCEL"; ObjectID = "b0z-Od-vJE"; */
+"b0z-Od-vJE.normalTitle" = "CANCELAR";
+
