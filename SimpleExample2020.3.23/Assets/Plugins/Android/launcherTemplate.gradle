@@ -32,7 +32,7 @@ android {
 	}
 
 	aaptOptions {
-		noCompress = ['.unity3d', '.ress', '.resource', '.obb'**STREAMING_ASSETS**]
+		noCompress = ['.ress', '.resource', '.obb'] + unityStreamingAssets.tokenize(', ')
 		ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
 	}**SIGN**
 

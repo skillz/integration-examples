@@ -1,9 +1,0 @@
-/* Class = "UILabel"; text = "Email Verification Required"; ObjectID = "37B-2S-YDa"; */
-"37B-2S-YDa.text" = "Renvoyer L'e-Mail";
-
-/* Class = "UITextField"; placeholder = "Please enter email"; ObjectID = "g93-g9-bLd"; */
-"g93-g9-bLd.placeholder" = "JOUER";
-
-/* Class = "UIButton"; normalTitle = "SEND EMAIL"; ObjectID = "iYX-HB-lZL"; */
-"iYX-HB-lZL.normalTitle" = "ADRESSE E-MAIL";
-

@@ -1,9 +1,0 @@
-/* Class = "UILabel"; text = "From:"; ObjectID = "POE-OS-qai"; */
-"POE-OS-qai.text" = "Von:";
-
-/* Class = "UILabel"; text = "To:"; ObjectID = "fIm-yt-ewa"; */
-"fIm-yt-ewa.text" = "Bis Zur:";
-
-/* Class = "UILabel"; text = "Ticket ID:"; ObjectID = "jMF-L9-usW"; */
-"jMF-L9-usW.text" = "Ticket -ID:";
-

@@ -13,7 +13,7 @@ public class StartNav : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playButton.onClick.AddListener(OnPlayButton);
+
     }
 
     // Update is called once per frame

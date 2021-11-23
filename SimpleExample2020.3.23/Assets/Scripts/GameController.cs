@@ -7,14 +7,17 @@ using SkillzSDK;
 
 public class GameController : MonoBehaviour
 {
+    private int retrySeconds = 2;
+    private float score = 0;
+    private int retryCount = 0;
+    private int maxRetries = 2;
+
     public Button quitButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        quitButton.onClick.AddListener(OnQuitButton);
 
-        
     }
 
     // Update is called once per frame
@@ -25,14 +28,46 @@ public class GameController : MonoBehaviour
 
     public void OnQuitButton()
     {
-        if (Application.platform == RuntimePlatform.IPhonePlayer || Application.platform == RuntimePlatform.Android)
+        // Generate random score
+        score = Random.Range(0.0f, 10000.0f);
+#if UNITY_IOS || UNITY_ANDROID  
+        TryToSubmitScore(score);
+#else
+        SceneManager.LoadScene("StartScene");
+#endif        
+    }
+
+    void TryToSubmitScore(float score) 
+    {
+        SkillzCrossPlatform.SubmitScore(score, OnSuccess, OnFailure);
+    }
+
+    void OnSuccess() {
+        Debug.Log("**** Success ****");
+        ResetRetryCount();
+        SkillzCrossPlatform.ReturnToSkillz();
+    }
+
+    void OnFailure(string reason) {
+        Debug.LogWarning("**** Fail: " + reason);
+        retryCount += 1;
+        StartCoroutine(RetrySubmit());
+    }
+
+    IEnumerator RetrySubmit() {
+        yield return new WaitForSeconds(retrySeconds);
+        if (retryCount <= maxRetries)
         {
-            //
-            SkillzCrossPlatform.ReportFinalScore(Random.Range(1, 53021));
-        }
-        else
+            TryToSubmitScore(score);
+        } 
+        else 
         {
-            SceneManager.LoadScene("StartScene");
+            ResetRetryCount();
+            SkillzCrossPlatform.DisplayTournamentResultsWithScore(score);
         }
+    }
+
+    void ResetRetryCount() {
+        retryCount = 0;
     }
 }

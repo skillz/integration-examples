@@ -1,6 +1,0 @@
-/* Class = "UIButton"; normalTitle = "ASK DEVELOPER TO UPDATE"; ObjectID = "8Jh-Oo-M9t"; */
-"8Jh-Oo-M9t.normalTitle" = "请开发者进行更新";
-
-/* Class = "UILabel"; text = "This game is not running a currently supported version of Skillz, and so only Z play is available. Please proceed at your own risk."; ObjectID = "dzr-qz-ruG"; */
-"dzr-qz-ruG.text" = "该游戏目前并未在支持 skillz 的版本中运行，所以只能使用 Z 玩游戏。你可以继续，但请自负风险。";
-
