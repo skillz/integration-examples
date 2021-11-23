@@ -1,12 +1,12 @@
-# Simple Example Game Using Unity Version 2019.3.12
+# Simple Example Game Using Unity Version 2020.3.23
 
-This repository contains an simple example cross-platform Unity game that integrates the Skillz SDK. It is intended to supplement the [documentation](https://cdn.skillz.com/doc/developer/unity/install_unity_sdk/) that walks users through the process of integrating a cross-platform Unity game.
+This repository contains an simple example cross-platform Unity game that integrates the Skillz SDK. It is intended to supplement the [documentation](https://docs.skillz.com/docs/installing-skillz-unity/) that walks users through the process of integrating a cross-platform Unity game.
 
 ## Build Environment
 
-This project is integrated the Skillz SDK version 25.0.22. Check the [Downloads](https://developers.skillz.com/downloads) page for the latest version, and the instructions are located [here](https://docs.skillz.com/docs/installing-skillz-unity/)
+This project is integrated the Skillz SDK version 27.2.8 Check the [Downloads](https://developers.skillz.com/downloads) page for the latest version, and the instructions are located [here](https://docs.skillz.com/docs/installing-skillz-unity/)
 
-The project was built on Unity 2019.3.12.
+The project was built on Unity 2020.3.23f1.
 
 If you are experiencing trouble, please email integrations@skillz.com with a detailed description of the issue you are encountering.
 
@@ -27,11 +27,12 @@ If you are experiencing trouble, please email integrations@skillz.com with a det
 1. From the Unity menu select `File > Build Settings...`
 2. In the dialog find the `Platform` section and click `Android`
 3. In the lower right on the dialog click the `Switch Platform` button
-4. In the lower left on the dialog click the `Player Settings...` button
-5. From the `Inspector` on the right side, on the `Android icon` tab expand the `Other Settings`
-6. Set the following values
+4. Select the `Export Project` checkbox
+5. In the lower left on the dialog click the `Player Settings...` button
+6. From the `Inspector` on the right side, on the `Android icon` tab expand the `Other Settings`
+7. Set the following values
     - `Scripting Backend` to `IL2CPP`
     - `Target Architectures` check boxes `ARMv7` and `ARM64`
 
-7. Back over to the Build Settings. In the lower right on the dialog click the `Build` button, and select a location to save the exported project
-8. Startup Android Studio and import the save project, then build and run on a device
+8. Back over to the Build Settings. In the lower right on the dialog click the `Export` button, and select a location to save the exported project
+9. Startup Android Studio and import the save project, then build and run on a device
