@@ -5,7 +5,11 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import androidx.appcompat.app.AlertDialog;
+
 import com.skillz.Skillz;
+import com.skillz.SkillzScoreCallback;
+import com.skillz.util.ContraUtils;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -267,8 +271,28 @@ public class MainGame {
             highScore = score;
             recordHighScore();
         }
+        
+        Skillz.submitScore(mActivity, new BigDecimal(score), mMatchId, new SkillzScoreCallback() {
+            @Override
+            public void failure(Exception error) {
+                ContraUtils.log("Report Score", "e", error,"Error in report score!");
+                new AlertDialog.Builder(mContext)
+                        .setMessage("Error in submit score, NOT reported.")
+                        .setNegativeButton("Ok", null)
+                        .create()
+                        .show();
+            }
 
-        Skillz.reportScore(mActivity, new BigDecimal(score), mMatchId);
+            @Override
+            public void success() {
+                ContraUtils.log("Report Score", "i", "Score reported successfully");
+                new AlertDialog.Builder(mContext)
+                        .setMessage("Score submitted successfully!")
+                        .setNegativeButton("Ok", null)
+                        .create()
+                        .show();
+            }
+        });
 
         mActivity.finish();
     }
