@@ -8,8 +8,6 @@ import android.view.View;
 
 import com.skillz.Skillz;
 
-import java.math.BigDecimal;
-
 class InputListener implements View.OnTouchListener {
 
     private static final int SWIPE_MIN_DISTANCE = 0;
@@ -131,8 +129,7 @@ class InputListener implements View.OnTouchListener {
                                     .setPositiveButton(R.string.reset, new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
-                                            Skillz.abortMatch(mActivity);
-                                            mActivity.finish();
+                                            mView.endGame();
                                         }
                                     })
                                     .setNegativeButton(R.string.continue_game, null)

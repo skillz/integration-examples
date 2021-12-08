@@ -11,9 +11,9 @@ Original code: https://github.com/danqing/2048
 Use governed by the MIT License.
 
 ## Build Environment
-This project is integrated the Skillz SDK version 25.0.22. Check the [Downloads](https://developers.skillz.com/downloads) page for the latest version, and the instructions are located [here](https://docs.skillz.com/docs/installing-skillz-android/)
+This project is integrated the Skillz SDK version 27.2.8. Check the [Downloads](https://developers.skillz.com/downloads) page for the latest version, and the instructions [here](https://docs.skillz.com/docs/installing-skillz-android/)
 
-The project was built on Android Studio 3.6.
+The project was built on Android Studio 4.2.1 and Android Gradle 4.2.1.
 
 If you are experiencing trouble, please email integrations@skillz.com with a detailed description of the issue you are encountering.
 

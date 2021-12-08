@@ -97,6 +97,10 @@ public class MainView extends View {
         game.newGame();
     }
 
+    protected void endGame() {
+        game.endGame();
+    }
+
     private static int log2(int n) {
         if (n <= 0) throw new IllegalArgumentException();
         return 31 - Integer.numberOfLeadingZeros(n);
@@ -138,6 +142,11 @@ public class MainView extends View {
     @Override
     protected void onSizeChanged(int width, int height, int oldW, int oldH) {
         super.onSizeChanged(width, height, oldW, oldH);
+        // added to avoid zero height layout
+        if (width < 1)
+            width = 100;
+        if (height < 1)
+            height = 100;
         getLayout(width, height);
         createBitmapCells();
         createBackgroundBitmap(width, height);
