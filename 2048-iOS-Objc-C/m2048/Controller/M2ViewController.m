@@ -118,33 +118,30 @@
 }
 
 
-- (IBAction)forfeitMatch:(id)sender
+- (IBAction)quitMatch:(id)sender
 {
     [self hideOverlay];
-    [self updateScore:0];
     
     if (![[Skillz skillzInstance] tournamentIsInProgress]) {
         [self->_scene startNewGame];
         return;
     }
     
-    UIAlertController *abortAlertController = [UIAlertController alertControllerWithTitle:@"Forfeit Match?"
-                                                                 message:@"A match is in progress. Are you sure you want to forfeit the match?"
+    UIAlertController *abortAlertController = [UIAlertController alertControllerWithTitle:@"Quit Match?"
+                                                                 message:@"A match is in progress. Are you sure you want to end the match?"
                                                                  preferredStyle:UIAlertControllerStyleAlert];
     
     UIAlertAction *yesAction = [UIAlertAction actionWithTitle:@"Yes"
                                               style:UIAlertActionStyleDefault
                                               handler:^(UIAlertAction* action)
     {
-        [[Skillz skillzInstance] notifyPlayerAbortWithCompletion:^(void)
-        {
-            NSLog(@"The user forfeited the match.");
-        }];
+        NSLog(@"The user quit the match.");
+        [self endGame:NO];
     }];
     
     UIAlertAction *noAction = [UIAlertAction actionWithTitle:@"No" style:UIAlertActionStyleCancel handler:^(UIAlertAction* action)
     {
-        NSLog(@"Forfeit canceled, continuing the current match.");
+        NSLog(@"Exit canceled, continuing the current match.");
     }];
     
     [abortAlertController addAction:yesAction];
@@ -172,7 +169,10 @@
 
 - (void)startNewGame
 {
+    [self hideOverlay];
+    [self updateScore:0];
     [_scene startNewGame];
+    
 }
 
 - (void)endGame:(BOOL)won
@@ -205,19 +205,39 @@
     // Freeze the current game.
     ((SKView *)self.view).paused = YES;
       
+      // Useful if the game has a playble non-Skillz mode
       if ([[Skillz skillzInstance] tournamentIsInProgress]) {
-          NSInteger matchId = [[[Skillz skillzInstance] getMatchInfo] id];
-          
-          [[Skillz skillzInstance] displayTournamentResultsWithScore:@([self->_scoreView.score.text integerValue])
-                                                         withMatchId:@(matchId)
-                                                      withCompletion:^(void)
-          {
-              NSLog(@"The match has ended, and the user's final score was reported.");
+          [[Skillz skillzInstance] submitScore:@([self->_scoreView.score.text integerValue])
+                                   withSuccess:^(void){
+              NSLog(@"Score Submit Success!");
+
+              [[Skillz skillzInstance] returnToSkillzWithCompletion:^{
+                  // make sure to clean thing up if needed
+                  NSLog(@"Returning to Skillz");
+                  [self->_scene startNewGame];
+                  [self updateScore:0];
+                  [self hideOverlay];
+                  [self.view removeFromSuperview];
+                  [self removeFromParentViewController];
+              }];
+              
+          } withFailure:^(NSString *errorMessage){
+              NSString *msg = [NSString stringWithFormat:@"Score Submit Failure: %@", errorMessage];
+              NSLog(@"%@", msg);
+              
+              // Fallback to get user back to Skillz UI
+            [[Skillz skillzInstance] displayTournamentResultsWithScore:@([self->_scoreView.score.text integerValue])
+                                                        withCompletion:^
+             {
+                NSLog(@"The match has ended, and the user's final score was reported.");
+                [self->_scene startNewGame];
+                [self updateScore:0];
+                [self hideOverlay];
+            }];
           }];
       }
   }];
 }
-
 
 - (void)hideOverlay
 {
@@ -232,7 +252,6 @@
     }];
   }
 }
-
 
 - (void)didReceiveMemoryWarning
 {
