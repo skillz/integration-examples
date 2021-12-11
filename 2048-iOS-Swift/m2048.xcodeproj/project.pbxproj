@@ -14,12 +14,12 @@
 		2443DC6218D662CA00C920C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2443DC6018D662CA00C920C1 /* InfoPlist.strings */; };
 		2443DC6B18D662CA00C920C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2443DC6918D662CA00C920C1 /* Main.storyboard */; };
 		2443DC7518D662CA00C920C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2443DC7418D662CA00C920C1 /* Images.xcassets */; };
+		8F90B5EC276418220067970E /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F90B5EB276418220067970E /* Skillz.framework */; };
+		8F90B5ED276418230067970E /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F90B5EB276418220067970E /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE48622824647587006F4E0A /* M2Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48622724647587006F4E0A /* M2Cell.swift */; };
 		CE48622A24648B85006F4E0A /* M2Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48622924648B85006F4E0A /* M2Position.swift */; };
 		CE4862302464AEA9006F4E0A /* M2Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE48622F2464AEA9006F4E0A /* M2Tile.swift */; };
 		CE4862342464B306006F4E0A /* M2GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4862332464B306006F4E0A /* M2GlobalState.swift */; };
-		CE6063A02464639D005098FC /* Skillz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE60639F2464639D005098FC /* Skillz.framework */; };
-		CE6063A1246463BA005098FC /* Skillz.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE60639F2464639D005098FC /* Skillz.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CE6D2F112465C99800052B23 /* M2Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D2F102465C99800052B23 /* M2Theme.swift */; };
 		CE6D2F132466170D00052B23 /* M2GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D2F122466170D00052B23 /* M2GridView.swift */; };
 		CE6D2F15246618CA00052B23 /* M2Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6D2F14246618CA00052B23 /* M2Grid.swift */; };
@@ -38,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CE6063A1246463BA005098FC /* Skillz.framework in Embed Frameworks */,
+				8F90B5ED276418230067970E /* Skillz.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,12 +59,12 @@
 		2443DC8318D662CA00C920C1 /* m2048Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "m2048Tests-Info.plist"; sourceTree = "<group>"; };
 		2443DC8518D662CA00C920C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2443DC8718D662CA00C920C1 /* m2048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = m2048Tests.m; sourceTree = "<group>"; };
+		8F90B5EB276418220067970E /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Skillz.framework; sourceTree = "<group>"; };
 		CE48622724647587006F4E0A /* M2Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2Cell.swift; sourceTree = "<group>"; };
 		CE48622924648B85006F4E0A /* M2Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2Position.swift; sourceTree = "<group>"; };
 		CE48622F2464AEA9006F4E0A /* M2Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = M2Tile.swift; sourceTree = "<group>"; };
 		CE4862322464AF15006F4E0A /* Imports.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Imports.h; sourceTree = "<group>"; };
 		CE4862332464B306006F4E0A /* M2GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2GlobalState.swift; sourceTree = "<group>"; };
-		CE60639F2464639D005098FC /* Skillz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Skillz.framework; sourceTree = "<group>"; };
 		CE6D2F102465C99800052B23 /* M2Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2Theme.swift; sourceTree = "<group>"; };
 		CE6D2F122466170D00052B23 /* M2GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2GridView.swift; sourceTree = "<group>"; };
 		CE6D2F14246618CA00052B23 /* M2Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2Grid.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 				2443DC5818D662CA00C920C1 /* CoreGraphics.framework in Frameworks */,
 				2443DC5A18D662CA00C920C1 /* UIKit.framework in Frameworks */,
 				2443DC5C18D662CA00C920C1 /* SpriteKit.framework in Frameworks */,
-				CE6063A02464639D005098FC /* Skillz.framework in Frameworks */,
+				8F90B5EC276418220067970E /* Skillz.framework in Frameworks */,
 				2443DC5618D662CA00C920C1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,7 +98,6 @@
 				CE4862312464AEF2006F4E0A /* Bridged */,
 				2443DC5D18D662CA00C920C1 /* m2048 */,
 				2443DC8118D662CA00C920C1 /* m2048Tests */,
-				CEACEF06221371D8005E18BF /* Skillz */,
 				2443DC5418D662CA00C920C1 /* Frameworks */,
 				2443DC5318D662CA00C920C1 /* Products */,
 			);
@@ -115,6 +114,7 @@
 		2443DC5418D662CA00C920C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8F90B5EB276418220067970E /* Skillz.framework */,
 				2443DC5518D662CA00C920C1 /* Foundation.framework */,
 				2443DC5718D662CA00C920C1 /* CoreGraphics.framework */,
 				2443DC5918D662CA00C920C1 /* UIKit.framework */,
@@ -230,14 +230,6 @@
 			path = Bridged;
 			sourceTree = "<group>";
 		};
-		CEACEF06221371D8005E18BF /* Skillz */ = {
-			isa = PBXGroup;
-			children = (
-				CE60639F2464639D005098FC /* Skillz.framework */,
-			);
-			name = Skillz;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,7 +265,7 @@
 					2443DC5118D662CA00C920C1 = {
 						DevelopmentTeam = ST3D4JRYHA;
 						LastSwiftMigration = 1140;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -483,9 +475,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = ST3D4JRYHA;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,15 +486,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "m2048/m2048-Prefix.pch";
 				INFOPLIST_FILE = "m2048/m2048-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillz.examples.2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Skillz Examples 2048";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridged/Imports.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -513,9 +506,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = ST3D4JRYHA;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -524,14 +517,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "m2048/m2048-Prefix.pch";
 				INFOPLIST_FILE = "m2048/m2048-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillz.examples.2048;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Skillz Examples 2048";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Bridged/Imports.h";
 				SWIFT_VERSION = 5.0;
+				VALIDATE_WORKSPACE = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

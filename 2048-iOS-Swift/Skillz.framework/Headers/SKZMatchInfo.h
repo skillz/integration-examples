@@ -43,6 +43,12 @@ __attribute__ ((visibility("default")))
 @property (readonly) BOOL isCash;
 
 /**
+ * Signifies that the match is a tiebreaker. Entry fees described in entryCash or entryPoints refer to the
+ * entry fee for the original match that was tied, and will not be deducted from the player's balance for tiebreaker matches.
+ */
+@property (readonly) BOOL isTieBreaker;
+
+/**
  * Signifies that the match to be played is a synchronous match, and should use your synchronous game flow.
  */
 @property (readonly) BOOL isSynchronous;
@@ -62,6 +68,25 @@ __attribute__ ((visibility("default")))
  * configured in the Skillz Developer Portal
  */
 @property (readonly, nonnull) NSNumber *templateId;
+
+/**
+ * Signifies that the match is a part of a bracketed tournament.
+ */
+@property (readonly) BOOL isBracket;
+
+/**
+ * The 1-indexed round number for bracketed tournaments. If the tournament is not a bracketed tournament, this will be nil.
+ *
+ * Entry fees are only deducted from the user's balance when playing the first round in a bracketed tournament. 
+ */
+@property (readonly, nullable) NSNumber *bracketRound;
+
+/**
+ * Signifies that the match was entered by waching a video ad instead of paying the entry fee.
+ *
+ * If this is true, the entry fee described by entryCash or entryPoints were not deducted from the user's balance.
+ */
+@property (readonly) BOOL isVideoAdEntry;
 
 @property (readonly, nullable) SKZSyncConnectionInfo *connectionInfo;
 
