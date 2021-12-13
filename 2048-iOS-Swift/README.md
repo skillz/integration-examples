@@ -1,6 +1,6 @@
 # "2048" Example Game Showing Skillz iOS (Swift) SDK Integration
 
-This repository contains an example iOS game writing in Swift that integrates the Skillz SDK. It is intended to supplement the [documentation](https://cdn.skillz.com/doc/developer/ios_native/integrate_skillz_sdk/install_skillz_via_xcode/) that walks users through the process of integrating an iOS game.
+This repository contains an example iOS game writing in Swift that integrates the Skillz SDK. It is intended to supplement the [documentation](https://docs.skillz.com/docs/installing-skillz-ios) that walks users through the process of integrating an iOS game.
 
 All credits to the design of this game belongs to:
 * Danqing Liu
@@ -13,9 +13,9 @@ Use governed by the MIT License.
 
 ## Build Environment
 
-This project is integrated the Skillz SDK version 25.0.22. Check the [Downloads](https://developers.skillz.com/downloads) page for the latest version, and the instructions are located [here](https://docs.skillz.com/docs/installing-skillz-ios/)
+This project is integrated the Skillz SDK version 27.2.8. Check the [Downloads](https://developers.skillz.com/downloads) page for the latest version, and the instructions are located [here](https://docs.skillz.com/docs/installing-skillz-ios/)
 
-The project was built on Xcode 11.
+The project was built on Xcode 13.
 
 If you are experiencing trouble, please email integrations@skillz.com with a detailed description of the issue you are encountering.
 
