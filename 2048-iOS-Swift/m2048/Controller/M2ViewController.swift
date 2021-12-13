@@ -114,25 +114,25 @@ class M2ViewController : UIViewController {
         (self.view as! SKView).isPaused = true;
     }
 
-    @IBAction func forfeitMatch(sender: Any) {
+    @IBAction func quitMatch(sender: Any) {
         self.hideOverlay()
-        self.update(score: 0)
 
         if !Skillz.skillzInstance().tournamentIsInProgress {
             self._scene!.startNewGame()
             return;
         }
         
-        let abortAlertController = UIAlertController(title: "Forfeit Match?", message: "A match is in progress. Are you sure you want to forfeit the match?", preferredStyle: UIAlertController.Style.alert)
+        let abortAlertController = UIAlertController(title: "Quit Match?",
+                                                     message: "A match is in progress. Are you sure you want to end the match?", preferredStyle: UIAlertController.Style.alert)
 
-        let yesAction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { action in
-            Skillz.skillzInstance().notifyPlayerAbort {
-                NSLog("The user forfeited the match.")
+        let yesAction = UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: {
+            action in self.endGame(won: false)
+            NSLog("The user quit the match.")
             }
-        })
+        )
 
         let noAction = UIAlertAction(title: "No", style: UIAlertAction.Style.cancel, handler: { action in
-            NSLog("Forfeit canceled, continuing the current match")
+            NSLog("Exit canceled, continuing the current match")
         })
 
         abortAlertController.addAction(yesAction)
@@ -156,6 +156,8 @@ class M2ViewController : UIViewController {
     }
 
     func startNewGame() {
+        self.hideOverlay()
+        self.update(score: 0)
         _scene!.startNewGame()
     }
 
@@ -187,13 +189,38 @@ class M2ViewController : UIViewController {
         }, completion: { isFinished in
             (self.view as! SKView).isPaused = true;
             if Skillz.skillzInstance().tournamentIsInProgress {
-                let matchId = Skillz.skillzInstance().getMatchInfo().id
-                let numberFormatter = NumberFormatter()
-                numberFormatter.numberStyle = NumberFormatter.Style.decimal
-
-                Skillz.skillzInstance().displayTournamentResults(withScore: numberFormatter.number(from: (self._scoreView?.score?.text)!)!, withMatchId: NSNumber(value: matchId), withCompletion: {
-                    NSLog("The match has ended, and the user's final score was reported")
-                })
+                Skillz.skillzInstance().submitScore(
+                    NSNumber(value: Int((self._scoreView?.score?.text)!)!),
+                    withSuccess: {
+                        NSLog("Score Submit Success!")
+                        
+                        Skillz.skillzInstance().returnToSkillz() {
+                            // make sure to clean things up if needed
+                            NSLog("Returning to Skillz")
+                            self.startNewGame()
+                            self.update(score: 0)
+                            self.hideOverlay()
+                            self.view.removeFromSuperview()
+                            self.removeFromParent()
+                        }
+                    },
+                    withFailure: {_msg in
+                        NSLog("Score Submit Failure: " + _msg)
+                        let numberFormatter = NumberFormatter()
+                        numberFormatter.numberStyle = NumberFormatter.Style.decimal
+                        
+                        // Fallback to get score in queue and send user to Skillz UI
+                        Skillz.skillzInstance().displayTournamentResults(
+                            withScore: numberFormatter.number(from: (self._scoreView?.score?.text)!)!,
+                            withCompletion: {
+                                NSLog("The match has ended, and the user's final score was reported")
+                                self.update(score: 0)
+                                self.hideOverlay()
+                                self.startNewGame()
+                                }
+                            )
+                    }
+                )
             }
         })
     }

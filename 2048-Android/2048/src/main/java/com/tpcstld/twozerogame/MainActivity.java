@@ -24,7 +24,6 @@ public class MainActivity extends SkillzActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         view = new MainView(this);
-
         setContentView(view);
     }
 

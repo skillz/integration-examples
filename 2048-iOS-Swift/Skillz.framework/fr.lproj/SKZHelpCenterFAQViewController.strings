@@ -7,6 +7,6 @@
 /* Class = "UIButton"; normalTitle = "Select Support Category"; ObjectID = "hcP-zJ-0w8"; */
 "hcP-zJ-0w8.normalTitle" = "Sélectionnez la catégorie de support";
 
-/* Class = "UIButton"; normalTitle = "CONTACT CUSTOMER SERVICE"; ObjectID = "iKi-7b-1kJ"; */
-"iKi-7b-1kJ.normalTitle" = "CONTACTEZ LE SERVICE CLIENT";
+/* Class = "UIButton"; normalTitle = "CONTACT PLAYER SUPPORT"; ObjectID = "iKi-7b-1kJ"; */
+"iKi-7b-1kJ.normalTitle" = "CONTACT PLAYER SUPPORT";
 

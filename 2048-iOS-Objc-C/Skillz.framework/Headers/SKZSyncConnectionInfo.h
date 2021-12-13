@@ -17,4 +17,6 @@
 // RSA encrypted
 @property (readonly, nonnull) NSString *matchToken;
 
+@property (readonly, assign) BOOL isBotMatch;
+
 @end

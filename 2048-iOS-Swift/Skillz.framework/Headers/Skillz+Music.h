@@ -58,6 +58,8 @@
  */
 -(BOOL)setBackgroundMusicFile:(NSString*)fileName;
 
+-(void)startBackgroundMusic;
+-(void)stopBackgroundMusic;
 -(void)updateSkillzMusicVolume:(CGFloat)volumeLevel;
 -(void)updateSFXVolume:(CGFloat)volumeLevel;
 @end

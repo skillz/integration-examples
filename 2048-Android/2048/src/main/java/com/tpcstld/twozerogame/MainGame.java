@@ -2,10 +2,16 @@ package com.tpcstld.twozerogame;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
+import android.util.Log;
+
+import androidx.appcompat.app.AlertDialog;
 
 import com.skillz.Skillz;
+import com.skillz.SkillzScoreCallback;
+import com.skillz.util.ContraUtils;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -261,16 +267,46 @@ public class MainGame {
         }
     }
 
-    private void endGame() {
+    protected void endGame() {
         aGrid.startAnimation(-1, -1, FADE_GLOBAL_ANIMATION, NOTIFICATION_ANIMATION_TIME, NOTIFICATION_DELAY_TIME, null);
         if (score >= highScore) {
             highScore = score;
             recordHighScore();
         }
+        Skillz.submitScore(mActivity,
+                new BigDecimal(score),
+                mMatchId,
+                new SkillzScoreCallback() {
+                    @Override
+                    public void failure(Exception error) {
+                        Log.e("Report Score", "Error in report score!");
+                        new AlertDialog.Builder(mContext)
+                                .setMessage("Error in submit score.")
+                                .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        Skillz.displayTournamentResultsWithScore(mActivity, new BigDecimal(score), mMatchId);
+                                    }
+                                })
+                                .create()
+                                .show();
+                    }
 
-        Skillz.reportScore(mActivity, new BigDecimal(score), mMatchId);
-
-        mActivity.finish();
+                    @Override
+                    public void success() {
+                        Log.i("Report Score","Score reported successfully");
+                        new AlertDialog.Builder(mContext)
+                                .setMessage("Score submitted successfully!")
+                                .setNegativeButton("Ok", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        Skillz.returnToSkillz(mActivity, mMatchId);
+                                    }
+                                })
+                                .create()
+                                .show();
+                    }
+                });
     }
 
     private Cell getVector(int direction) {
